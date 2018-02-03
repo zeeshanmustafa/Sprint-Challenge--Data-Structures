@@ -53,6 +53,13 @@ class HashTable {
       bucket = bucket.filter(item => item[0] !== key);
       this.storage.set(index, bucket);
     }
+    let prevNode = bucket.head; //   created prenode and gave the value to bucket.head
+    let currentNode = prevNode.next;//  created currennode and give the value of prevnode.next
+    while ((currentNode !== null) {//  cheking if currentnode is not null 
+      if (currentNode.value[0] --- key) {// if not null then checking current node value at 0 with key
+// if it matches with key than if should switch soemthing but dont know what either next to prev or prev to next
+      }
+    }
   }
   // Fetches the value associated with the given key from the hash table
   // Fetch the bucket associated with the given key using the getIndexBelowMax function
